@@ -10,10 +10,9 @@ public class UserRegisterDto {
     private String confirmPassword;
     private String fullName;
 
-    public UserRegisterDto() {
-    }
 
-    public UserRegisterDto(String confirmPassword, String email, String fullName, String password) {
+
+    public UserRegisterDto(String email,  String password, String confirmPassword,String fullName) {
         this.confirmPassword = confirmPassword;
         this.email = email;
         this.fullName = fullName;
@@ -46,7 +45,7 @@ public class UserRegisterDto {
         this.fullName = fullName;
     }
 
-    @Pattern(regexp = "[A-Za-z\\d]{6,}]")
+    @Pattern(regexp = "[A-Za-z\\d]{6,}")
     public String getPassword() {
         return password;
     }
