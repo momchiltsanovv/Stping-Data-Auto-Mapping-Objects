@@ -46,7 +46,7 @@ public class Main implements CommandLineRunner {
 
                 case "Logout" -> userService.logout();
 
-                case "AddGames" -> gameService.addGame(new GameAddDto(commands[1],
+                case "AddGame" -> gameService.addGame(new GameAddDto(commands[1],
                                                                      new BigDecimal(commands[2]),
                                                                      Double.parseDouble(commands[3]),
                                                                      commands[4],

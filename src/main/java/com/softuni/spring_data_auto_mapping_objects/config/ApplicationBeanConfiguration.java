@@ -30,7 +30,7 @@ public class ApplicationBeanConfiguration {
             }
         };
 
-        modelMapper.addConverter(localDateConverter);
+
 
 
         modelMapper.typeMap(GameAddDto.class, Game.class)
